@@ -1,0 +1,34 @@
+.menu {
+  margin-bottom: 50px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  &__item {
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #898989;
+    &.active {
+      color: red;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &.main__menu {
+      margin-bottom: 60px;
+    }
+  }
+  &__icons {
+    margin-right: 13px;
+  }
+}
+
+.main__menu {
+  margin-bottom: 60px;
+}
