@@ -1,0 +1,10 @@
+.navbar__right {
+  display: flex;
+  align-items: center;
+  &-icons {
+    display: flex;
+    width: 175px;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+}
