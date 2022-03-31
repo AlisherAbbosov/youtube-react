@@ -12,7 +12,7 @@ const Users = () => {
 
       const data = await res.json();
       if (data?.data?.length > 0) {
-        setUsers([...data.data]);
+        setUsers([...data?.data]);
       }
     })();
   }, []);
