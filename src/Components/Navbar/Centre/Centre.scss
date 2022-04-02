@@ -1,11 +1,10 @@
 .navbar__centre {
-  position: relative;
-  margin-right: 115px;
 }
 .search__input {
   background: #ebebeb;
   mix-blend-mode: normal;
   opacity: 0.3;
+  margin-right: 115px;
   border-radius: 22px;
   border: none;
   font-weight: 400;
@@ -13,12 +12,14 @@
   line-height: 20px;
   outline: none;
   padding: 12px 17px 12px 23px;
-  width: 830px;
+  max-width: 830px;
+  width: 100%;
+  // box-sizing: border-box;
   color: #30384c;
 }
 
 .search__label {
   position: absolute;
-  top: 12px;
-  right: 17px;
+  top: 0px;
+  left: -160px;
 }

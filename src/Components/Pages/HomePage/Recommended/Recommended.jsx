@@ -18,9 +18,9 @@ const Recommended = () => {
     }
   }, [videos]);
   return (
-    <div className="recommend">
-      <div className="recommend__top">
-        <h2 className="recommend__title">Recommended</h2>
+    <div className="recommended">
+      <div className="recommended__top">
+        <h2 className="recommended__title">Recommended</h2>
         <Arrows />
       </div>
       <ul className="home__lists">
@@ -29,10 +29,14 @@ const Recommended = () => {
             <NavLink
               key={vid.id}
               to={"/video/" + vid.id}
-              className="recommend__item"
+              className="recommended__item"
             >
               <div className="card">
-                <img className="recommend__videos" src={vid.url} alt="video" />
+                <img
+                  className="recommended__videos"
+                  src={vid.url}
+                  alt="video"
+                />
                 <div className="card__body">
                   <h4 className="card__title">{vid.title}</h4>
                   <div className="card__body-bottom">

@@ -19,6 +19,13 @@ p {
   margin: 0;
 }
 
+.close__menu {
+  display: none;
+}
+.bottom {
+  display: flex;
+}
+
 .container {
   max-width: 1550px;
   padding-left: 25px;

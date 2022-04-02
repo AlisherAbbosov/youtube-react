@@ -1,4 +1,4 @@
-.recommend {
+.recommended {
   margin-bottom: 50px;
   &__top {
     display: flex;
@@ -9,6 +9,9 @@
   }
   &__title {
     margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
   }
   &__list {
     display: flex;

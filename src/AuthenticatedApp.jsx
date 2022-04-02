@@ -5,9 +5,11 @@ import Navbar from "./Components/Navbar/Navbar";
 import Pages from "./Components/Pages/Pages";
 
 import { Context } from "./Content/Videos";
+import { Context as MenuContext } from "./Content/HasMenu";
 
 const AuthenticatedApp = () => {
   const { setVideos } = React.useContext(Context);
+  const { menu } = React.useContext(MenuContext);
 
   React.useEffect(() => {
     (async () => {
@@ -25,10 +27,10 @@ const AuthenticatedApp = () => {
     <div className="container">
       <Navbar />
       <Grid container spacing={0}>
-        <Grid item xs={1.8}>
+        <Grid item xs={menu && 1.8}>
           <LeftComponent />
         </Grid>
-        <Grid item xs={10.2}>
+        <Grid item xs={menu && 10.2}>
           <Pages />
         </Grid>
       </Grid>

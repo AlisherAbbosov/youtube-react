@@ -1,8 +1,9 @@
 import "./Centre.scss";
 import SeatchIcon from "../../Lib/Icons/Navbar/search.png";
+import { IconButton } from "@mui/material";
 const Centre = () => {
   return (
-    <div className="navbar__centre">
+    <>
       <input
         className="search__input"
         placeholder="Search"
@@ -10,10 +11,17 @@ const Centre = () => {
         name="input"
         id="searchInput"
       />
-      <label className="search__label" htmlFor="searchInput">
+      <IconButton
+        className="search__label"
+        // color="primary"
+        // sx={{ p: "10px" }}
+        // aria-label="directions"
+      >
         <img src={SeatchIcon} alt="icon" />
-      </label>
-    </div>
+      </IconButton>
+      {/* <label className="search__label" htmlFor="searchInput">
+      </label> */}
+    </>
   );
 };
 export default Centre;
