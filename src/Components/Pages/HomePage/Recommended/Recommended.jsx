@@ -1,5 +1,5 @@
 import React from "react";
-import Arrows from "../../Arrows/Arrows";
+import Arrows from "../../../Arrows/Arrows";
 import "../HomeTop/HomeTop.scss";
 import "./Recommended.scss";
 
@@ -17,7 +17,6 @@ const Recommended = () => {
       setVideo(videos.slice(5, 8));
     }
   }, [videos]);
-  console.log(video);
   return (
     <div className="recommend">
       <div className="recommend__top">

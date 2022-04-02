@@ -2,6 +2,7 @@ import React from "react";
 import "./Users.scss";
 import { Link } from "react-router-dom";
 import { Context } from "../../../Content/UsersContent";
+import { Avatar } from "@mui/material";
 
 const Users = () => {
   const { users, setUsers } = React.useContext(Context);
@@ -22,11 +23,16 @@ const Users = () => {
       <h2 className="users__title">Subscriptions</h2>
       <ul className="users__list">
         {users.map(user => (
-          <Link to={"/chanel/" + user.id} key={user.id} className="users__item">
-            <img
+          <Link
+            to={"/channel/" + user.id}
+            key={user.id}
+            className="users__item"
+          >
+            <Avatar
               className="users__img"
               src={user.avatar}
               alt={`${user.name}'s img`}
+              sx={{ width: 26, height: 26 }}
             />
             {`${user.first_name} ${user.last_name}`}
           </Link>

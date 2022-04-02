@@ -2,7 +2,7 @@ import React from "react";
 import "./NavigateVideos.scss";
 import { NavLink } from "react-router-dom";
 import NavigateAvatar from "../../../../Assets/Images/navigate-img.png";
-import Arrows from "../../Arrows/Arrows";
+import Arrows from "../../../Arrows/Arrows";
 import Buttons from "../../../Button/Button";
 
 import { Context } from "../../../../Content/Videos";
@@ -21,16 +21,18 @@ const NavigateVideos = () => {
     <div className="navigate">
       <div className="navigate__top">
         <div className="navigate__top-boxes">
-          <img
-            className="navigate__top-avatar"
-            src={NavigateAvatar}
-            alt="avatar"
-          />
-          <h4 className="navigate__title">Food & Drink</h4>
+          <NavLink className="navigate__top-boxes" to={"/chanel/"}>
+            <img
+              className="navigate__top-avatar"
+              src={NavigateAvatar}
+              alt="avatar"
+            />
+            <h4 className="navigate__title">Food & Drink</h4>
+          </NavLink>
           <p className="navigate__text">Recommended channel for you</p>
         </div>
         <div className="navigate__top-boxes">
-          <Buttons title="Subscribe 2.3m" variant="subscribe" />
+          <Buttons title="Subscribe 2.3m" variant="subscribe homeBtn" />
           <Arrows />
         </div>
       </div>

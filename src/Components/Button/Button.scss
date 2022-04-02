@@ -11,8 +11,10 @@
   text-align: center;
   color: #ffffff;
   transition: all 0.3s;
-  margin-right: 40px;
   &:active {
     transform: translateY(2px);
+  }
+  &.homeBtn {
+    margin-right: 40px;
   }
 }

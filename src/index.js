@@ -11,13 +11,13 @@ import { Provider as VideosProvider } from "./Content/Videos";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <TokenProvider>
-        <VideosProvider>
+      <VideosProvider>
+        <TokenProvider>
           <UsersProvider>
             <App />
           </UsersProvider>
-        </VideosProvider>
-      </TokenProvider>
+        </TokenProvider>
+      </VideosProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

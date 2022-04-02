@@ -2,10 +2,11 @@ import React from "react";
 import "./HomeTop.scss";
 
 import { NavLink } from "react-router-dom";
-import Arrows from "../../Arrows/Arrows";
+import Arrows from "../../../Arrows/Arrows";
 
 import { Context } from "../../../../Content/Videos";
 import { Context as UserContext } from "../../../../Content/UsersContent";
+import { Avatar } from "@mui/material";
 
 const HomeTop = () => {
   const { videos } = React.useContext(Context);
@@ -21,11 +22,12 @@ const HomeTop = () => {
   return (
     <div className="home__top">
       <div className="home__top-user">
-        <NavLink className="home__user" to={"/chanel/" + users[0]?.id}>
-          <img
+        <NavLink className="home__user" to={"/channel/" + users[0]?.id}>
+          <Avatar
             className="home__user-avatar"
             src={users[0]?.avatar}
             alt="avatar"
+            sx={{ width: 50, height: 50 }}
           />
 
           {`${users[0]?.first_name} ${users[0]?.last_name}`}
