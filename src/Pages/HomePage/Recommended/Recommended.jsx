@@ -1,15 +1,15 @@
 import React from "react";
-import Arrows from "../../../Arrows/Arrows";
+import Arrows from "../../../Components/Arrows/Arrows";
 import "../HomeTop/HomeTop.scss";
 import "./Recommended.scss";
 
-import { Context } from "../../../../Content/Videos";
+import { Context } from "../../../Content/Videos";
 
 import "./Recommended.scss";
 import { NavLink } from "react-router-dom";
 
 const Recommended = () => {
-  const { videos, setVideos } = React.useContext(Context);
+  const { videos } = React.useContext(Context);
   const [video, setVideo] = React.useState([]);
 
   React.useEffect(() => {

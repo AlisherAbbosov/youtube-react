@@ -4,7 +4,7 @@ import ChannelMidle from "./ChannelMidle/ChannelMidle";
 import "./ChannelPage.scss";
 import ChannelTop from "./ChannelTop/ChannelTop";
 import ChannelVideos from "./ChannelVideos/ChannelVideos";
-import { Context } from "../../../Content/HasMenu";
+import { Context } from "../../Content/HasMenu";
 
 const ChannelPage = () => {
   const { setMenu } = React.useContext(Context);

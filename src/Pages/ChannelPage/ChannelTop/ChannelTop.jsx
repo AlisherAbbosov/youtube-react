@@ -1,10 +1,10 @@
 import React from "react";
 import "./ChannelTop.scss";
-import Buttons from "../../../Button/Button";
-import NotificationIcon from "../../../Lib/Icons/Channel/channel-notification.svg";
-import ChannelTopImg from "../../../../Assets/Images/user-top-img.jpg";
+import Buttons from "../../../Components/Button/Button";
+import NotificationIcon from "../../../Components/Lib/Icons/Channel/channel-notification.svg";
+import ChannelTopImg from "../../../Assets/Images/user-top-img.jpg";
 
-import { Context } from "../../../../Content/UsersContent";
+import { Context } from "../../../Content/UsersContent";
 import { useParams } from "react-router-dom";
 
 const ChannelTop = () => {

@@ -1,11 +1,11 @@
 import React from "react";
 import "./NavigateVideos.scss";
 import { NavLink } from "react-router-dom";
-import NavigateAvatar from "../../../../Assets/Images/navigate-img.png";
-import Arrows from "../../../Arrows/Arrows";
-import Buttons from "../../../Button/Button";
+import NavigateAvatar from "../../../Assets/Images/navigate-img.png";
+import Arrows from "../../../Components/Arrows/Arrows";
+import Buttons from "../../../Components/Button/Button";
 
-import { Context } from "../../../../Content/Videos";
+import { Context } from "../../../Content/Videos";
 
 const NavigateVideos = () => {
   const { videos } = React.useContext(Context);

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { Context } from "../../../../../Content/Videos";
-import SearchImg from "../../../../Lib/Icons/Navbar/search.png";
+import { Context } from "../../../../Content/Videos";
+import SearchImg from "../../../../Components/Lib/Icons/Navbar/search.png";
 import "./MiddlePlayer.scss";
 
 const MiddlePlayer = () => {

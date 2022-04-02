@@ -2,10 +2,10 @@ import React from "react";
 import "./HomeTop.scss";
 
 import { NavLink } from "react-router-dom";
-import Arrows from "../../../Arrows/Arrows";
+import Arrows from "../../../Components/Arrows/Arrows";
 
-import { Context } from "../../../../Content/Videos";
-import { Context as UserContext } from "../../../../Content/UsersContent";
+import { Context } from "../../../Content/Videos";
+import { Context as UserContext } from "../../../Content/UsersContent";
 import { Avatar } from "@mui/material";
 
 const HomeTop = () => {

@@ -1,6 +1,6 @@
 .middle__left {
   display: flex;
-  width: 900px;
+  max-width: 900px;
   height: 210px;
   &-video {
     width: 410px;
@@ -9,7 +9,7 @@
     margin-right: 32px;
   }
   &-info {
-    width: 500px;
+    max-width: 500px;
   }
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Context } from "../../../../Content/Videos";
-import { Context as UsersContext } from "../../../../Content/UsersContent";
+import { Context } from "../../../Content/Videos";
+import { Context as UsersContext } from "../../../Content/UsersContent";
 import { useParams } from "react-router-dom";
 
 const ChannelVideos = () => {

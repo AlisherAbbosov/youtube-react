@@ -11,16 +11,9 @@ const Centre = () => {
         name="input"
         id="searchInput"
       />
-      <IconButton
-        className="search__label"
-        // color="primary"
-        // sx={{ p: "10px" }}
-        // aria-label="directions"
-      >
+      <IconButton className="search__label">
         <img src={SeatchIcon} alt="icon" />
       </IconButton>
-      {/* <label className="search__label" htmlFor="searchInput">
-      </label> */}
     </>
   );
 };

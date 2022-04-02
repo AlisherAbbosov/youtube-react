@@ -3,7 +3,7 @@ import HomeTop from "./HomeTop/HomeTop";
 import React from "react";
 import Recommended from "./Recommended/Recommended";
 import NavigateVideos from "./NavigateVideos/NavigateVideos";
-import { Context } from "../../../Content/HasMenu";
+import { Context } from "../../Content/HasMenu";
 
 const HomePage = () => {
   const { setMenu } = React.useContext(Context);

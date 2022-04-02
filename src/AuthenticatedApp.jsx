@@ -2,7 +2,7 @@ import { Grid, Item } from "@mui/material";
 import React from "react";
 import LeftComponent from "./Components/LeftComponent/LeftComponent";
 import Navbar from "./Components/Navbar/Navbar";
-import Pages from "./Components/Pages/Pages";
+import Pages from "./Pages/Pages";
 
 import { Context } from "./Content/Videos";
 import { Context as MenuContext } from "./Content/HasMenu";

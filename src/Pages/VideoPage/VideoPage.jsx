@@ -1,5 +1,5 @@
 import React from "react";
-import { Context } from "../../../Content/HasMenu";
+import { Context } from "../../Content/HasMenu";
 
 const VideoPage = () => {
   const { menu, setMenu } = React.useContext(Context);

@@ -1,6 +1,6 @@
 import { Avatar } from "@mui/material";
 import React from "react";
-import { Context } from "../../../../../Content/UsersContent";
+
 import "./RecommChannel.scss";
 
 const RecommChannel = () => {
