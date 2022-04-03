@@ -1,0 +1,158 @@
+.login {
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1100px;
+  }
+
+  &__wrap {
+    padding: 35px 30px 30px;
+    box-shadow: 0px 22.0037px 32.5056px rgba(147, 153, 176, 0.25);
+    border-radius: 12.6022px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 535px;
+    height: 555px;
+  }
+
+  &__logo {
+    margin-bottom: 35px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__inputs {
+    background: #efeeee;
+    border-radius: 6.3011px;
+    font-weight: 400;
+    font-size: 12.6022px;
+    line-height: 15px;
+    padding: 13px 15px;
+    margin-bottom: 12px;
+    border: none;
+    outline: none;
+    width: 315px;
+  }
+
+  &__btn {
+    background: red;
+    border-radius: 6.30112px;
+    padding: 12px;
+    border: none;
+    font-weight: 700;
+    font-size: 14.7026px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+
+  &__or {
+    font-weight: 700;
+    font-size: 11.5521px;
+    line-height: 12px;
+    color: #5a686c;
+    margin-bottom: 20px;
+  }
+
+  &__google-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12.6022px;
+    line-height: 13px;
+    /* identical to box height */
+    background: none;
+    display: flex;
+    border: none;
+    box-shadow: -2px 2px 9px 0px rgba(34, 60, 80, 0.2);
+    padding: 8px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+  &__google-icon {
+    margin-right: 16px;
+    height: 25px;
+    width: 25px;
+  }
+
+  &__forgot {
+    font-weight: 400;
+    font-size: 12.6022px;
+    line-height: 15px;
+    margin-bottom: 39px;
+    color: #5a686c;
+    cursor: pointer;
+  }
+  &__sing {
+    font-weight: 700;
+    font-size: 12.6022px;
+    line-height: 13px;
+    cursor: pointer;
+    color: #1877f2;
+  }
+
+  &__get {
+    margin: 21px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #5a686c;
+  }
+
+  &__btns-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    border-radius: 12px;
+    background: none;
+    &-icons {
+      margin-right: 6px;
+    }
+
+    &-app {
+      border: solid 2px black;
+      font-weight: 700;
+      font-size: 14.7225px;
+      line-height: 15px;
+      color: #212121;
+    }
+    &-google {
+      border: solid 2px rgba(128, 130, 133, 1);
+      font-weight: 700;
+      font-size: 14.7225px;
+      line-height: 15px;
+      color: rgba(128, 130, 133, 1);
+    }
+  }
+}
