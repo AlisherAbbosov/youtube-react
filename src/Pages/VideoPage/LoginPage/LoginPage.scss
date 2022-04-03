@@ -136,6 +136,7 @@
     padding: 15px 40px;
     border-radius: 12px;
     background: none;
+    transition: all 0.3s;
     &-icons {
       margin-right: 6px;
     }
@@ -153,6 +154,10 @@
       font-size: 14.7225px;
       line-height: 15px;
       color: rgba(128, 130, 133, 1);
+    }
+
+    &:active {
+      transform: translateY(1px);
     }
   }
 }
