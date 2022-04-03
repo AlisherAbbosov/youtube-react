@@ -21,6 +21,8 @@ p {
 
 .close__menu {
   display: none;
+  /* transform: translateX(-180px);
+  position: absolute; */
 }
 .bottom {
   display: flex;

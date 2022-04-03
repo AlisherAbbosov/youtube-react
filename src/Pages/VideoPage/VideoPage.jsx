@@ -1,13 +1,21 @@
 import React from "react";
 import { Context } from "../../Content/HasMenu";
+import NextVideos from "./NextVideos/NextVideos";
+import VideoInfo from "./VideoInfo/VideoInfo";
+import "./VideoPage.scss";
 
 const VideoPage = () => {
-  const { menu, setMenu } = React.useContext(Context);
+  const { setMenu } = React.useContext(Context);
 
   React.useEffect(() => {
-    setMenu(!menu);
+    setMenu(false);
   }, []);
-  return <div>vido</div>;
+  return (
+    <div className="video__page">
+      <VideoInfo />
+      <NextVideos />
+    </div>
+  );
 };
 
 export default VideoPage;

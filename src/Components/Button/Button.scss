@@ -6,6 +6,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
   background: #ff0000;
   border-radius: 20px;
   text-align: center;
@@ -16,5 +17,8 @@
   }
   &.homeBtn {
     margin-right: 40px;
+  }
+  &.video-btn {
+    height: 100%;
   }
 }
