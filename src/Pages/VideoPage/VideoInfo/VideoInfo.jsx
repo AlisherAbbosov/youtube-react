@@ -15,7 +15,6 @@ const VideoInfo = () => {
   const { video_id } = useParams();
 
   const foundVideo = videos.find(video => video?.id === Number(video_id));
-  console.log(foundVideo);
   return (
     <div className="video__info">
       <div className="video__player">
