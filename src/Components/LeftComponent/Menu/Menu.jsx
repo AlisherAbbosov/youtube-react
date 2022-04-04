@@ -20,10 +20,12 @@ const Menu = () => {
   return (
     <div className="menu">
       <ul className="menu__list">
-        <NavLink className="menu__item" to="/">
-          <img className="menu__icons" src={homeIcon} alt="home" />
-          Home
-        </NavLink>
+        <li className="menu__item active">
+          <NavLink className="menu__item active" to="/">
+            <img className="menu__icons" src={homeIcon} alt="home" />
+            Home
+          </NavLink>
+        </li>
 
         <li className="menu__item">
           <img className="menu__icons" src={TrendIcon} alt="tend icon" />
