@@ -9,6 +9,7 @@ import LikedIcon from "../Menu/liked.svg";
 import MusicIcon from "../Menu/music.svg";
 import GamesIcon from "../Menu/games.svg";
 import ShowMoreIcon from "../Menu/show.svg";
+import SettingIcon from "..//Menu/setting.svg";
 
 export {
   homeIcon,
@@ -22,4 +23,5 @@ export {
   MusicIcon,
   GamesIcon,
   ShowMoreIcon,
+  SettingIcon,
 };

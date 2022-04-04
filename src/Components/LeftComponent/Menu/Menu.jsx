@@ -13,6 +13,7 @@ import {
   MusicIcon,
   GamesIcon,
   ShowMoreIcon,
+  SettingIcon,
 } from "../../Lib/Icons/Menu/MenuIcons";
 
 const Menu = () => {
@@ -80,6 +81,11 @@ const Menu = () => {
             alt="Show more icon"
           />
           Show more
+        </li>
+
+        <li className="menu__item settings__item">
+          <img className="menu__icons" src={SettingIcon} alt="" />
+          Settings
         </li>
       </ul>
     </div>
