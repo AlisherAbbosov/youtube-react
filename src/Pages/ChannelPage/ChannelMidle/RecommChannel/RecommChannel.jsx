@@ -29,6 +29,7 @@ const RecommChannel = () => {
               alt={`${user.name}'s img`}
               sx={{ width: 50, height: 50 }}
             />
+
             {`${user.first_name} ${user.last_name}`}
           </li>
         ))}

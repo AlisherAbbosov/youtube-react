@@ -6,10 +6,12 @@
     color: #c2c2c2;
     margin-bottom: 30px;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
   }
+
   &__item {
     cursor: pointer;
     font-weight: 700;
@@ -21,6 +23,7 @@
       margin-bottom: 30px;
     }
   }
+
   &__users-img {
     margin-right: 20px;
   }

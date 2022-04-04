@@ -6,6 +6,7 @@ const ChannelMidle = () => {
   return (
     <div className="channel__midle">
       <MiddlePlayer />
+
       <RecommChannel />
     </div>
   );

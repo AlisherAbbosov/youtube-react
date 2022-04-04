@@ -15,14 +15,18 @@ const VideoInfo = () => {
   const { video_id } = useParams();
 
   const foundVideo = videos.find(video => video?.id === Number(video_id));
+
   return (
     <div className="video__info">
       <div className="video__player">
         <img className="video__info-video" src={foundVideo?.url} alt="video" />
+
         <div className="video__player-body">
           <h2 className="video__player-title">{foundVideo?.title}</h2>
+
           <div className="video__player-video-info">
             <p className="video__player-views">123k views</p>
+
             <div>
               <ul className="video__player-list">
                 <li>
@@ -72,6 +76,7 @@ const VideoInfo = () => {
             src={AvatarImg}
             sx={{ width: 80, height: 80 }}
           />
+
           <div className="video__info-userinfo">
             <h3 className="video__info-username">Food & Drink</h3>
             <p className="video__info-published">Published on 14 Jun 2019</p>
@@ -83,6 +88,7 @@ const VideoInfo = () => {
               a number of factors, including ad placement, demographic, even the
               consumer’s mood when they see your ad.{" "}
             </p>
+
             <button className="video__info-show-btn">Show more</button>
           </div>
         </div>

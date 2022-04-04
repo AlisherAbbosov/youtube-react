@@ -9,7 +9,7 @@ import UserOptions from "../../UserOptions/UserOptions";
 
 const Right = () => {
   const [isShow, setShow] = React.useState(false);
-  console.log(isShow);
+
   return (
     <div className="navbar__right">
       <div

@@ -7,18 +7,22 @@
     padding-right: 75px;
     margin-bottom: 30px;
   }
+
   &__title {
     margin: 0;
     font-weight: 700;
     font-size: 26px;
     line-height: 33px;
   }
+
   &__list {
     display: flex;
   }
+
   &__item:not(:last-child) {
     margin-right: 40px;
   }
+
   &__videos {
     width: 540px;
     height: 250px;

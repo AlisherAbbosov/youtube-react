@@ -16,7 +16,7 @@ const Users = () => {
         setUsers([...data?.data]);
       }
     })();
-  }, []);
+  }, [setUsers]);
 
   return (
     <div className="users">

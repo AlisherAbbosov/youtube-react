@@ -10,7 +10,7 @@ const HomePage = () => {
 
   React.useEffect(() => {
     setMenu(true);
-  }, []);
+  }, [setMenu]);
   return (
     <div className="home__page">
       <HomeTop />

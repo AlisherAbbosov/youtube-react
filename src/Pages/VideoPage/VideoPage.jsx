@@ -9,7 +9,7 @@ const VideoPage = () => {
 
   React.useEffect(() => {
     setMenu(false);
-  }, []);
+  }, [setMenu]);
   return (
     <div className="video__page">
       <VideoInfo />

@@ -34,19 +34,23 @@ const ChannelTop = () => {
             src={user?.avatar || Avatar}
             alt="user avatar"
           />
+
           <div>
             <h3 className="channel__header-user-name">{`${
               user?.first_name || "Food &"
             } ${user?.last_name || "Drink"}`}</h3>
+
             <p className="channel__header-user-subscribed">245K subscribed</p>
           </div>
         </div>
+
         <div className="channel__header-right">
           <img
             className="channel__header-icon"
             src={NotificationIcon}
             alt="img"
           />
+
           <Buttons variant="subscribe" title="Subscribe 2.3m" />
         </div>
       </div>

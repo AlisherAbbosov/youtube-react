@@ -21,10 +21,12 @@ const NextVideos = () => {
     <div className="next__video">
       <div className="next__video-top">
         <h4 className="next__video-top-title">Next</h4>
+
         <p className="next__video-autoplay">
           Autoplay <Switch />
         </p>
       </div>
+
       <ul className="next__video-list">
         {videos.length > 0 &&
           video.map(vid => (
@@ -36,8 +38,10 @@ const NextVideos = () => {
                     src={vid.url}
                     alt="video"
                   />
+
                   <div className="card__body">
                     <h4 className="next__video-title">{vid.title}</h4>
+
                     <div className="next__video-bottom">
                       <p>80k views · 3 days ago</p>
                       <p>Dollie Blair</p>

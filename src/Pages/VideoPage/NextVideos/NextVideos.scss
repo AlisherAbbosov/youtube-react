@@ -5,12 +5,14 @@
     justify-content: space-between;
     margin-bottom: 25px;
   }
+
   &-top-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     margin: 0;
   }
+
   &-autoplay {
     display: flex;
     align-items: center;
@@ -20,6 +22,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+
   &-video {
     max-width: 380px;
     width: 100%;
@@ -27,6 +30,7 @@
     margin-bottom: 13px;
     border-radius: 14px;
   }
+
   &-title {
     font-weight: 700;
     font-size: 23px;
@@ -34,6 +38,7 @@
     margin: 0;
     margin-bottom: 9px;
   }
+
   &-bottom {
     font-weight: 400;
     font-size: 16px;
@@ -42,10 +47,12 @@
     justify-content: space-between;
     color: #c2c2c2;
   }
+
   &-list {
     display: flex;
     flex-direction: column;
   }
+
   &-item:not(:last-child) {
     margin-bottom: 23px;
   }

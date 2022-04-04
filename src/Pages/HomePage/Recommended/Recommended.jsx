@@ -17,35 +17,38 @@ const Recommended = () => {
       setVideo(videos.slice(5, 8));
     }
   }, [videos]);
+
   return (
     <div className="recommended">
       <div className="recommended__top">
         <h2 className="recommended__title">Recommended</h2>
+
         <Arrows />
       </div>
+
       <ul className="home__lists">
         {video.length > 0 &&
           video.map(vid => (
-            <NavLink
-              key={vid.id}
-              to={"/video/" + vid.id}
-              className="recommended__item"
-            >
-              <div className="card">
-                <img
-                  className="recommended__videos"
-                  src={vid.url}
-                  alt="video"
-                />
-                <div className="card__body">
-                  <h4 className="card__title">{vid.title}</h4>
-                  <div className="card__body-bottom">
-                    <p>80k views · 3 days ago</p>
-                    <p>Gussie French</p>
+            <li className="recommended__item" key={vid.id}>
+              <NavLink to={"/video/" + vid.id}>
+                <div className="card">
+                  <img
+                    className="recommended__videos"
+                    src={vid.url}
+                    alt="video"
+                  />
+
+                  <div className="card__body">
+                    <h4 className="card__title">{vid.title}</h4>
+
+                    <div className="card__body-bottom">
+                      <p>80k views · 3 days ago</p>
+                      <p>Gussie French</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </NavLink>
+              </NavLink>
+            </li>
           ))}
       </ul>
     </div>

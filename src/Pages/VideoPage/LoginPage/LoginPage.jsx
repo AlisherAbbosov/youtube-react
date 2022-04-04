@@ -30,8 +30,9 @@ const Login = () => {
   return (
     <div className="login__container">
       <div className="login__img-box">
-        <img className="login__img" src={Iphone} alt="phone image" />
+        <img className="login__img" src={Iphone} alt="phoneimage" />
       </div>
+
       <div>
         <div className="login__wrap">
           <img className="login__logo" src={Logo} alt="Site logo" />
@@ -43,12 +44,14 @@ const Login = () => {
               name="user_email"
               defaultValue="eve.holt@reqres.in"
             />
+
             <input
               className="login__inputs"
               type="password"
               name="user_password"
               defaultValue="cityslicka"
             />
+
             <button className="login__btn">Login</button>
           </form>
 
@@ -60,7 +63,6 @@ const Login = () => {
           </button>
 
           <p className="login__forgot">Forgot Password?</p>
-
           <p className="login__sing">Don’t have an account? Sign Up</p>
         </div>
 
@@ -74,6 +76,7 @@ const Login = () => {
             <img className="login__btns-icons" src={AppStore} alt="app" />
             <p>App Store</p>
           </a>
+
           <a
             href="https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ru&gl=US"
             className="login__btns login__btns-google"

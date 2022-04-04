@@ -11,6 +11,7 @@ const Left = () => {
       <IconButton className="navbar__left-icon">
         <img src={MenuIcon} alt="menuIcon" />
       </IconButton>
+
       <NavLink to="/">
         <img src={Logo} alt="logo" />
       </NavLink>

@@ -12,12 +12,10 @@ const HomeTop = () => {
   const { videos } = React.useContext(Context);
   const { users } = React.useContext(UserContext);
   const [video, setVideo] = React.useState([]);
-  const [user, setUser] = React.useState();
 
   React.useEffect(() => {
     if (videos.length > 0) {
       setVideo(videos.slice(0, 5));
-      setUser(users[0]);
     }
   }, [videos]);
 
@@ -45,8 +43,10 @@ const HomeTop = () => {
               <NavLink to={"/video/" + vid.id}>
                 <div className="card">
                   <img className="home__top-videos" src={vid.url} alt="video" />
+
                   <div className="card__body">
                     <h4 className="card__title">{vid.title}</h4>
+
                     <div className="card__body-bottom">
                       <p>80k views · 3 days ago</p>
                       <p>{`${users[0]?.first_name} ${users[0]?.last_name}`}</p>

@@ -9,6 +9,7 @@
     border-radius: 14px;
     margin-right: 32px;
   }
+
   &-info {
     max-width: 500px;
   }
@@ -21,12 +22,14 @@
     line-height: 34px;
     margin: 0 0 10px;
   }
+
   &-comment {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 20px;
   }
+
   &-info {
     font-weight: 400;
     font-size: 16px;
@@ -40,6 +43,7 @@
     align-items: center;
     margin-bottom: 54px;
   }
+
   &__item {
     font-weight: 400;
     font-size: 18px;
@@ -47,6 +51,7 @@
     &:not(:last-child) {
       margin-right: 70px;
     }
+
     &.selected {
       color: #ff0000;
       font-weight: 700;

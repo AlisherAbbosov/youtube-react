@@ -1,4 +1,4 @@
-import { Grid, Item } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import LeftComponent from "./Components/LeftComponent/LeftComponent";
 import Navbar from "./Components/Navbar/Navbar";
@@ -21,7 +21,7 @@ const AuthenticatedApp = () => {
         setVideos([...vide]);
       }
     })();
-  }, []);
+  }, [setVideos]);
 
   return (
     <div className="container">

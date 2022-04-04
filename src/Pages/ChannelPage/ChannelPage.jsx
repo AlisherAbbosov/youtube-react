@@ -11,7 +11,7 @@ const ChannelPage = () => {
 
   React.useEffect(() => {
     setMenu(true);
-  }, []);
+  }, [setMenu]);
   return (
     <div className="channel">
       <ChannelTop />
