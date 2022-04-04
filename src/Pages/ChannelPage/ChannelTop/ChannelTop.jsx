@@ -3,6 +3,7 @@ import "./ChannelTop.scss";
 import Buttons from "../../../Components/Button/Button";
 import NotificationIcon from "../../../Components/Lib/Icons/Channel/channel-notification.svg";
 import ChannelTopImg from "../../../Assets/Images/user-top-img.jpg";
+import Avatar from "../../../Assets/Images/navigate-img.png";
 
 import { Context } from "../../../Content/UsersContent";
 import { useParams } from "react-router-dom";
@@ -30,11 +31,13 @@ const ChannelTop = () => {
         <div className="channel__header-left">
           <img
             className="channel__header-user-avatar"
-            src={user?.avatar}
+            src={user?.avatar || Avatar}
             alt="user avatar"
           />
           <div>
-            <h3 className="channel__header-user-name">{`${user?.first_name} ${user?.last_name}`}</h3>
+            <h3 className="channel__header-user-name">{`${
+              user?.first_name || "Food &"
+            } ${user?.last_name || "Drink"}`}</h3>
             <p className="channel__header-user-subscribed">245K subscribed</p>
           </div>
         </div>

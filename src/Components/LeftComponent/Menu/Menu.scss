@@ -32,3 +32,15 @@
 .main__menu {
   margin-bottom: 60px;
 }
+
+.settings__item {
+  position: absolute;
+  flex-grow: 1;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  color: #898989;
+}

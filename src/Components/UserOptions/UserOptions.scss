@@ -1,0 +1,53 @@
+.options {
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  right: 25px;
+  z-index: 99;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-radius: 15px;
+  pointer-events: none;
+  background-color: white;
+  transition: opacity 0.2s ease;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+  &--open {
+    opacity: 1;
+    display: flex;
+    pointer-events: all;
+  }
+
+  &__wrap {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  &__user-avatar {
+    margin-right: 12px;
+  }
+
+  &__user-logout {
+    margin-left: 15px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 9;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  &--open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

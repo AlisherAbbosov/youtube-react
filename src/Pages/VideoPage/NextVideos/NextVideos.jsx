@@ -14,7 +14,7 @@ const NextVideos = () => {
   React.useEffect(() => {
     if (videos.length > 0) {
       const filterVideo = videos.filter(video => video.id !== Number(video_id));
-      setVideo(filterVideo.slice(20, 24));
+      setVideo(filterVideo.slice(28, 32));
     }
   }, [video_id, videos]);
   return (
